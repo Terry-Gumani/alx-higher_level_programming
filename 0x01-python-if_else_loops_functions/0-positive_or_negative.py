@@ -1,30 +1,14 @@
 #!/usr/bin/python3
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-
 import random
 
-/**
- *main - Print if a number is positive or negative
- *Return: 0
- */
-int main(void)
-{
-	int n;
+number = random.randint(-10000, 10000)
+last_digit = abs(number) % 10
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	} else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	} else
-	{
-		printf("%d is negative\n", n);
-	}
+print("The string Last digit of", number, "is", last_digit, end=" ")
 
-	return (0);
-}
+if last_digit > 5:
+    print("and is greater than 5")
+elif last_digit == 0:
+    print("and is 0")
+else:
+    print("and is less than 6 and not 0")
