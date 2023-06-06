@@ -1,7 +1,33 @@
 #!/usr/bin/python3
-# 2-print_alphabet.py
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
-"""Print the alphabet in lowercase, not followed by a new line."""
-for letter in range(97, 123):
-    print("{}".format(chr(letter)), end="")
+/**
+ *main - print if de last digit of n is greater than 5, less than 6 or is zero
+ *Return: 0
+ */
 
+int main(void)
+{
+	int n;
+	int last;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	last = n % 10;
+
+	if (last > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, last);
+	} else if (last == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, last);
+	} else
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+	}
+
+	return (0);
+}
