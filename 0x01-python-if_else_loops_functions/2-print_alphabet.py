@@ -2,4 +2,4 @@
 """Print the alphabet in lowercase, not followed by a new line."""
 
 for i in range(97, 123):
-    print(chr(i), end='')
+    print("{}".format(chr(i)), end="")
