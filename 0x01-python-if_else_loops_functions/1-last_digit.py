@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-/**
- *main - print if the last digit of n is greater than 5, less than 6 or is zero
- *Return: 0
- */
-
 import random
 number = random.randint(-10000, 10000)
 digit = abs(number) % 10
 if number < 0:
-    digit = -(digit)
+    digit = -digit
 print(f"Last digit of {number:d} is {digit:d} and is ", end="")
 if digit > 5:
     print("greater than 5")
