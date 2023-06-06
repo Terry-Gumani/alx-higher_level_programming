@@ -3,6 +3,8 @@
 #include <time.h>
 #include <stdio.h>
 
+import random
+
 /**
  *main - print if de last digit of n is greater than 5, less than 6 or is zero
  *Return: 0
