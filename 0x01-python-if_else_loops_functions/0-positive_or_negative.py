@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -9,22 +6,13 @@ number = random.randint(-10, 10)
  *main - Print if a number is positive or negative
  *Return: 0
  */
-int main(void)
-{
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	} else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	} else
-	{
-		printf("%d is negative\n", n);
-	}
+import random
+number = random.randint(-10, 10)
+if number > 0:
+    print("{} is positive".format(number))
+elif number == 0:
+    print("{} is zero".format(number))
+else:
+    print("{} is negative".format(number))
 
-	return (0);
-}
