@@ -1,6 +1,6 @@
 # Python - Almost a circle
 
-In this project, I encapsulated skills in Python object-oriented programming
+In this project, I urilised skills in Python object-oriented programming
 by coding three connected classes to represent rectangles and squares. I wrote my
 own test suite using the `unittest` module to test all functionality for each
 class.
@@ -17,7 +17,7 @@ The three classes involved utilizing the following Python tools:
 * JSON and CSV serialization/deserialization
 * Unittesting
 
-## Tests;
+## Tests :heavy_check_mark:
 
 * [tests/test_models](./tests/test_models): Folder containing the following
 independently-developed test files:
